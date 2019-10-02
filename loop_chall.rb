@@ -49,15 +49,10 @@
 def shift_left(list)
     newlist = []
     n1 = 0
-    n2 = 0
-     list.size.times do |n|
-        slice = list[n..(list.size - 1)]
+    n2 = list[0]
+    (list.size - 5).times do |n|
+        slice = list[n + 1..(list.size-1)]
         n1 = slice
-        
-    end
-     (list.size - 5).times do |n|
-        slice1 = list[n..(n - 1)]
-        n2 = slice1
     end
     newlist.push(n1)
     newlist.push(n2)#push individual
