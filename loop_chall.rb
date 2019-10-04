@@ -46,19 +46,19 @@
 
 
 
-def shift_left(list)
-    newlist = []
-    n1 = 0
-    n2 = list[0]
-    (list.size - 5).times do |n|
-        slice = list[n + 1..(list.size-1)]
-        n1 = slice
-    end
-    newlist.push(n1)
-    newlist.push(n2)#push individual
-end
+# def shift_left(list)
+#     newlist = []
+#     n1 = 0
+#     n2 = list[0]
+#     (list.size - 5).times do |n|
+#         slice = list[n + 1..(list.size-1)]
+#         n1 = slice
+#     end
+#     newlist.push(n1)
+#     newlist.push(n2)#push individual
+# end
 
- print shift_left([1, 2, 3, 4, 5, 6])
+#  print shift_left([1, 2, 3, 4, 5, 6])
     
 
 # def g_happy(str)
@@ -80,13 +80,15 @@ end
 
 # print merge([1, 5, 3, 7], [3, 6, 9, 2])
 
-# def middle_way(list1, list2)
-#     mid_num1 = list1[list1.size / 2]
-#     mid_num2 = list2[list2.size / 2]
-#     new_list = []
-#     new_list.push(mid_num1)
-#     new_list.push(mid_num2)
-#     return new_list
-# end
+def middle_way(list1, list2)
+     mid_num1 = list1[list1.size / 2]
+     mid_num2 = list2[list2.size / 2]
+     new_list = []
+     new_list.push(mid_num1)
+     new_list.push(mid_num2)
+     return new_list
+ end
 
 # print middle_way([1, 2, 3], [4, 5, 6])
+
+def either_2_4(list)
